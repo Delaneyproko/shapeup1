@@ -5,13 +5,18 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    padding: 10px;
     width: 60%;
     margin: 0 auto;
-    border: 1px solid green;
+    border: 1px solid steelblue;
+    box-shadow: 5px 5px 10px 10px gray;
 }
 section {
   clear: both;
+}
+header {
+  border-bottom: 3px steelblue;
+  background-image: linear-gradient(white, steelblue);
+  padding: 1.5em 0;
 }
 header h2 {
     font-size: 250%;
@@ -30,9 +35,14 @@ header img {
 }
 section h2 {
   margin: .5em 0;
+  padding: 0 1em;
+}
+section h3 {
+  padding: 0 1em;
 }
 h1 {
     font-size: 175%;
+    padding: 0 1em;
 }
 /* unvisited link */
 section a:link {
@@ -59,8 +69,13 @@ aside a {
 
 p {
   margin: 1em 0;
+  padding: 0 1em;
 }
 
+blockquote {
+  padding: 0 2em;
+  font-style: italic;
+}
 /*psuedo classes for aside*/
 /* unvisited link */
 aside a:link {
@@ -82,13 +97,20 @@ aside a:active {
   color: maroon;
 }
 aside ul {
-  line-height: 20px;
-  margin-left: 25px;
+  line-height: 25px;
+  margin-left: 3em;
+}
+aside h2 {
+  padding: 0 1em;
 }
 
 footer {
   text-align: center;
   font-size: 80%;
   font-variant: small-caps;
-  border-top: 1px solid black;
+  border-top: 1px solid steelblue;
+  margin-top: 1.5em;
+  padding: 1.5em 0;
+  background-color: steelblue;
+  color: white;
 }
