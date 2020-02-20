@@ -10,13 +10,16 @@ body {
     border: 1px solid steelblue;
     box-shadow: 5px 5px 10px 10px gray;
 }
-section {
-  clear: both;
-}
+
 header {
   border-bottom: 3px steelblue;
   background-image: linear-gradient(white, steelblue);
   padding: 1.5em 0;
+}
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
 }
 header h2 {
     font-size: 250%;
@@ -32,6 +35,10 @@ header h3 {
 header img {
   float: left;
   margin-right: 3em;
+}
+section {
+  float: right;
+  width: 60%;
 }
 section h2 {
   margin: .5em 0;
@@ -63,6 +70,11 @@ section a:hover {
 section a:active {
     color: steelblue;
   }
+aside {
+  float: left;
+  width: 40%;
+  margin-top: 1em;
+}
 aside a {
   font-weight: bold;
 }
@@ -73,8 +85,12 @@ p {
 }
 
 blockquote {
-  padding: 0 2em;
+  margin: 0 2em;
+  padding: 0 .5em;
+  font-size: 90%;
   font-style: italic;
+  border-left: 5px solid maroon;
+  background-color: navajowhite;
 }
 /*psuedo classes for aside*/
 /* unvisited link */
@@ -99,12 +115,14 @@ aside a:active {
 aside ul {
   line-height: 25px;
   margin-left: 3em;
+  margin-top: 1em;
 }
 aside h2 {
   padding: 0 1em;
 }
 
 footer {
+  clear: both;
   text-align: center;
   font-size: 80%;
   font-variant: small-caps;
